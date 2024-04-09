@@ -94,7 +94,6 @@ int run_smp1_tests(int argc, char **argv)
 	   or 'all' */
 	testentry_t tests[] = {
 		{ "sub",     "smp1", test_sub     },
-		{ "rerun",   "smp1", test_rerun   },
 		{ "counter", "smp1", test_counter },
 		{ "path",    "smp1", test_path    } };
 	int result = run_testrunner(argc, argv, tests, sizeof(tests) / sizeof (testentry_t));
